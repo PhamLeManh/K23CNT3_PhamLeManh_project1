@@ -39,6 +39,8 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     Sửa</a>
     <a href="/khoa/delete/{{$item->PLMMAKHOA}}" class="btn btn-danger">
     Xóa </a>
+    <a href="{{ route('khoa.create') }}" class="btn btn-primary btn-sm">Thêm mới</a>
+
     </td>
    
     </tr>
@@ -46,5 +48,6 @@ href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     </tbody>
 </table>
 </section>
+
 </body>
 </html>

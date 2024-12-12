@@ -25,16 +25,11 @@ Route::get('/khoa',[KhoaController::class,'index'])->name('khoa.plmlist');
 Route::get('/khoa/detail/{makh}',
 [KhoaController::class,'detail'])->name('khoa.plmDetail');
 
-Route::get('/khoa/create',[KhoaController::class,'create'])->name('khoa.plmcreate');
+Route::get('/khoa/create', [KhoaController::class, 'create'])->name('khoa.create');
+
 
 Route::post('/khoa/create',[KhoaController::class,'createSubmit'])->name('khoa.createSubmit');
 
 Route::post('/khoa/create-submit', [KhoaController::class, 'createSubmit'])->name('khoa.createSubmit');
+Route::post('/khoa/edit/{makh}', [KhoaController::class, 'plmEdit'])->name('khoa.plmEdit');
 
-//
-
-
-Route::get('/khoa', [KhoaController::class, 'index'])->name('khoa.plmlist');  // Danh sách khoa
-Route::get('/khoa/{makh}', [KhoaController::class, 'detail'])->name('khoa.plmDetail'); // Chi tiết khoa
-Route::get('/khoa/create', [KhoaController::class, 'create'])->name('khoa.plmcreate');  // Form tạo mới
-Route::post('/khoa/create-submit', [KhoaController::class, 'createSubmit'])->name('khoa.createSubmit');  // Xử lý tạo mới

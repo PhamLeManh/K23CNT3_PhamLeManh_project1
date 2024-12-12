@@ -47,4 +47,9 @@ class KhoaController extends Controller
         // Chuyển hướng về danh sách khoa sau khi thêm thành công
         return redirect('/khoa')->with('success', 'Khoa đã được thêm mới');
     }
+    public function plmEdit($makh)
+    {
+        $khoa = DB::select(query: "Select * from plmkhoa where PLMMAKHOA = ?",bindings: [$makh])[0];
+        return view(view:"plmKhoa.plmEdit",data: ['khoa'=>$khoa]);
+    } 
 }
