@@ -15,17 +15,17 @@ class NhaCCTableSeeder extends Seeder
     {
         // Tạo đối tượng Factory
         $faker = Faker::create();
-
-        foreach (range(1, 100) as $index) {
+        foreach(range(1,100) as $index){
             DB::table('nhacc')->insert([
-                'MaNCC'    => $faker->uuid(), // Tạo UUID
-                // 'MaNCC' => $faker->word(15), // Nếu muốn là từ có độ dài cố định
-                'TenNCC'   => $faker->words(3, true), // Tạo tên NCC
-                'Diachi'   => $faker->address, // Địa chỉ
-                'Dienthoai' => $faker->phoneNumber, // Số điện thoại
-                'email'    => $faker->email, // Email
-                'status'   => $faker->boolean, // Trạng thái
+                'MaNCC'=>$faker->uuid(),
+                // 'MaNCC'=>$faker->word(15),
+                'TenNCC'=>$faker->sentence(5),
+                'Diachi'=>$faker->address(),
+                'Dienthoai'=>$faker->phoneNumber(10),
+                'email'=>$faker->email(),
+                'status'=>$faker->boolean()
             ]);
         }
+        }
     }
-}
+
