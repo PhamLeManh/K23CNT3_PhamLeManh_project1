@@ -22,6 +22,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             PLM_QUAN_TRITableseeder::class,
             PLM_LOAI_SAN_PHAMTableSeeder::class,
+            PLM_CT_HOA_DONTableSeeder::class,
+            PLM_HOA_DONTableSeeder::class,
+            PLM_KHACH_HANGTableSeeder::class,
             PLM_SAN_PHAMTableSeeder::class
         ]);
     }

@@ -7,4 +7,4 @@
             <h1>Thống Kê Hệ Thống</h1> {{-- Fixed Vietnamese spelling with accents --}}
         </div>
     </div>
-@endsection
+@endsection 

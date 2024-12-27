@@ -39,7 +39,7 @@ Route::prefix('loai-san-pham')->group(function () {
 });
 
 
-Route::get('/plm-admins', [PLM_LOAI_SAN_PHAMController::class, 'plmList'])->name('plmLoaiSanPham.index');
+Route::get('/plm-admins/loai-sanpham', [PLM_LOAI_SAN_PHAMController::class, 'plmList'])->name('plmLoaiSanPham.index');
 
 Route::delete('/loai-san-pham/destroy/{id}', [PLM_LOAI_SAN_PHAMController::class, 'destroy'])->name('plmLoaiSanPham.destroy');
 
