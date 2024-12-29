@@ -48,15 +48,10 @@ Route::post('/plm-admins/plm-loaisanpham', [PLM_LOAI_SAN_PHAMController::class, 
 use App\Http\Controllers\PLM_QUAN_TRIController;
 
 
-Route::get('/login', [PLM_QUAN_TRIController::class, 'plmLogin'])->name('plmaccount.plmLogin');  // Route hiển thị form đăng nhập
-Route::post('/login', [PLM_QUAN_TRIController::class, 'plmLoginSubmit'])->name('plmaccount.plmLoginsubmit');  // Route xử lý đăng nhập
-
 
 
 
 Route::post('/login', [PLM_QUAN_TRIController::class, 'login'])->name('plmAdmins.login');
-
-
 Route::get('/plm-admins', [PLM_QUAN_TRIController::class, 'index'])->name('plmAdmins.index');
 
 
@@ -71,7 +66,7 @@ Route::delete('/plm-admins/plm-sanpham/delete/{id}', [PLM_SAN_PHAMController::cl
 Route::put('/plm-admins/plm-sanpham/update/{id}', [PLM_SAN_PHAMController::class, 'update'])->name('plmAdmins.plmsanpham.update');
 
 
-// Routes for PLM_LOAI_SAN_PHAM
+
 Route::get('/plm-admins/plm-sanpham/create', [PLM_SAN_PHAMController::class, 'plmCreate'])->name('plmAdmins.plmsanpham.plmCreate');
 Route::post('/plm-admins/plm-sanpham', [PLM_SAN_PHAMController::class, 'store'])->name('plmAdmins.plmsanpham.store');
 

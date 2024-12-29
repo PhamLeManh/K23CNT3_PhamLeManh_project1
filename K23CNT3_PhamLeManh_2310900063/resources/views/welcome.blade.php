@@ -30,7 +30,7 @@
     <form action="{{ route('plmAdmins.login') }}" method="POST" class="card shadow w-25">
       @csrf
       <div class="card-header text-center bg-light">
-        <h1 class="rgb-text mb-0">Admin Account Thế Giới Laptop</h1>
+        <h1 class="rgb-text mb-0">Admin Account Thế Giới Laptop</h1> <br>
       </div>
       <div class="card-body">
         <div class="mb-3">
@@ -54,5 +54,5 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-</body>
+</body> 
 </html>

@@ -12,7 +12,7 @@ class PLM_QUAN_TRITableseeder extends Seeder
      */
     public function run(): void
     {
-        $plmMatKhau = md5("123456@"); // Thêm dấu chấm phẩy ở cuối dòng
+        $plmMatKhau = md5("123456@"); 
 
         DB::table('PLM_QUAN_TRI')->insert([
             'plmTaiKhoan' => "phamlemanh070205@gmail.com",

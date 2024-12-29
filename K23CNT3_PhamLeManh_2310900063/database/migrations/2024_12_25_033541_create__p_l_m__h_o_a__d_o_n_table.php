@@ -13,14 +13,14 @@ return new class extends Migration
         Schema::create('PLM_HOA_DON', function (Blueprint $table) {
             $table->id();
             $table->string('plmHoaDon', 255)->unique();
-            $table->unsignedBigInteger('plmMaKhachHang'); // Đảm bảo kiểu phù hợp với bảng PLM_KHACH_HANG
-            $table->foreign('plmMaKhachHang')->references('id')->on('PLM_KHACH_HANG')->onDelete('cascade'); // Đảm bảo khóa ngoại với bảng PLM_KHACH_HANG
+            $table->unsignedBigInteger('plmMaKhachHang'); 
+            $table->foreign('plmMaKhachHang')->references('id')->on('PLM_KHACH_HANG')->onDelete('cascade'); 
             $table->date('plmNgayHoaDon');
             $table->string('plmHoTenKhachHang', 255);
             $table->string('plmEmail', 255);
             $table->string('plmDienThoai', 255);
             $table->string('plmDiaChi', 255);
-            $table->decimal('plmTongGiaTri', 15, 2); // Sử dụng decimal thay vì float để đảm bảo độ chính xác cao
+            $table->decimal('plmTongGiaTri', 15, 2); 
             $table->tinyInteger('plmTrangThai');
             $table->timestamps();
         });
