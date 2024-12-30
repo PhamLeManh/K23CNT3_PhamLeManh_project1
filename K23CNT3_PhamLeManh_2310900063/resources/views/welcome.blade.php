@@ -48,11 +48,13 @@
           @enderror
         </div>
         <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+      
+        <a  class="btn btn-secondary w-100 mt-2">Đăng ký</a>
       </div>
     </form>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-</body> 
+</body>  
 </html>

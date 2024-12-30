@@ -13,6 +13,9 @@
                         <strong>Email:</strong> phamlemanh070205@gmail.com <br>
                         <strong>MSV:</strong> 2310900063
                     </p>
+                    
+                    <a 
+                       class="btn btn-danger mt-3">Đăng Xuất</a>
                 </div>
             </div>
         </div>
@@ -28,7 +31,6 @@
             font-weight: bold;
         }
 
-        
         .profile-card {
             background-color: white;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -52,8 +54,18 @@
             color: #333;
         }
 
-        .row {
-            margin-top: 30px;
+        .btn-danger {
+            background-color: #dc3545;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
         }
     </style>
 @endsection
+
